@@ -1,8 +1,5 @@
 class PrototypesController < ApplicationController
   def index
-    @hello = "こんにちは、"
-    @login_name = current_user.name
-    @san = "さん"
   end
 
   def new
@@ -12,7 +9,9 @@ class PrototypesController < ApplicationController
   def create
   end
 
-  private
+    @hello = "こんにちは、"
+    @login_name = current_user.name
+    @san = "さん"
 
   end
 
